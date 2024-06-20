@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name_release">STEPN Sidekick</string>
+    <string name="app_name_debug" translatable="false">Sidekick Debug</string>
+    <string name="enabled">ENABLED</string>
+    <string name="disabled">DISABLED</string>
+    <string name="minimum_speed">Minimum Speed</string>
+    <string name="maximum_speed">Maximum Speed</string>
+    <string name="settings">Settings</string>
+    <string name="countdown_timer">Countdown</string>
+    <string name="energy_to_spend">Energy</string>
+    <string name="voice_updates">Voice Updates</string>
+    <string name="speed">Speed</string>
+    <string name="time">Time</string>
+    <string name="one_min_thirty_sec">1 min / 30 sec</string>
+    <string name="start">START</string>
+    <string name="current_speed">Current Speed:</string>
+    <string name="time_remaining">Time Remaining:</string>
+    <string name="zero_mins">(0 mins)</string>
+    <string name="min">" min 30 sec)"</string>
+    <string name="min_plural">" mins 30 sec)"</string>
+    <string name="hour">" hr"</string>
+    <string name="hours_plural">" hrs"</string>
+    <string name="gps_off">GPS must be turned on for this application to function. Turn on now?</string>
+    <string name="gps_permissions">This app requires precise location permissions</string>
+    <string name="custom" translatable="false">"Custom "</string>
+    <string name="minimum_speed_too_low">Minimum speed must be at least 1 km/h</string>
+    <string name="maximum_speed_too_low">Max speed must be at least 1 km/h greater than min speed</string>
+    <string name="energy_too_low">Energy must be at least 0.2</string>
+    <string name="plz_turn_on_gps">Please turn on GPS before starting</string>
+    <string name="plz_allow_precise_location">Please allow the app to access your precise location</string>
+    <string name="okay">OKAY</string>
+    <string name="about">" ABOUT "</string>
+    <string name="how_to">INSTRUCTIONS</string>
+    <string name="notes">Notes</string>
+    <string name="notes_details1">It is best to use this app on the same device that is running STEPN so that both apps are using the same location data.</string>
+    <string name="notes_details2">STEPN adds a 30-second buffer to every activity. This app\'s timer accounts for this extra time, but it may not match STEPN\'s timer exactly.</string>
+    <string name="notes_details3">
+Mystery box probabilities are calculated using a machine learning model based on community data from ForgeBlast (see below). The probabilities should be fairly accurate, but they are based on patterns and trends and should not be taken as a guarantee.</string>
+    <string name="notes_details4">GMT earnings are constantly changing and are difficult to predict. This app\'s estimate will give you an idea of the earning range to expect, but is not precise (and if it\'s way off, feel free to shoot me an email!).</string>
+    <string name="contact">Please contact me if you find any errors or have any suggestions to improve the app:</string>
+    <string name="contact_email" translatable="false">sidekickfeedback@gmail.com</string>
+    <string name="support_project">If you enjoy the app, please consider supporting!</string>
+    <string name="question_mark" translatable="false">\?</string>
+    <string name="sol_address_copied">SOL address copied to clipboard</string>
+    <string name="bnb_address_copied">BNB address copied to clipboard</string>
+    <string name="eth_address_copied">ETH address copied to clipboard</string>
+    <string name="instructions_1">Use the arrows to select a shoe. You can use the default shoes or you can select \"Custom\" to input custom speeds.
+        The app will warn you if your current speed falls outside of the speed range that you choose.</string>
+    <string name="instructions_2">Enter the amount of energy you wish to spend. The amount of time required to spend the energy will be displayed below.</string>
+    <string name="instructions_3">Select whether or not the ten-second countdown timer is enabled. If enabled, this timer
+        gives your GPS time to sync and gives you time to switch to the STEPN app to start your activity. If disabled, the app will start the activity timer immediately.</string>
+    <string name="instructions_4">Select type of speed alerts: audible, vibration, neither, or both. If vibration alerts are enabled, your device will vibrate if you fall outside of your speed range.
+        Vibrations will also occur at one minute and thirty seconds, if these alerts are enabled.</string>
+    <string name="instructions_5">Select whether or not voice alerts are enabled. The \"Speed\" and \"Time\" alerts will sound every five minutes, updating you with the amount of
+        time remaining and information about your speed. The \"1 min / 30 sec\" alert gives a warning when you have one minute remaining and another warning at thirty
+        seconds. </string>
+    <string name="instructions_6">Press the start button to start your activity. Happy earning!</string>
+    <string name="welcome_message">Please view these brief instructions before getting started.</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP ></string>
+    <string name="thirty_sec">" 30 sec)"</string>
+    <string name="go" translatable="false">GO</string>
+    <string name="welcome">WELCOME!</string>
+    <string name="not_a_multiple_of_2">Energy must be a multiple of 0.2</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="gps_permission_instructions">This app requires location permissions to run properly. Please select \"Precise\" in order to receive accurate speed alerts.</string>
+    <string name="app_goal">The goal of this app is to make walking and running while using STEPN more enjoyable.         Audible alerts allow you to focus on your activity rather than constantly checking your phone.</string>
+    <string name="email_copied">Email copied to clipboard</string>
+    <string name="starting_in">"Starting in: "</string>
+    <string name="paused">Paused</string>
+    <string name="pause">PAUSE</string>
+    <string name="stop">STOP</string>
+    <string name="update">UPDATE</string>
+    <string name="update_details_one">You can now switch between calculating GST and GMT.</string>
+    <string name="update_details_two">Because GMT earnings vary so widely, estimated GMT earnings are displayed as a range. The number at the bottom is the median of the range.</string>
+    <string name="update_details_three">Optimizing GMT will come in a later update, along with other GMT-related features.</string>
+    <string name="review_plz">If you have been enjoying the app, please consider leaving a review on the Play Store!</string>
+    <string name="five_min_average">5-Min Average:</string>
+    <string name="current">CURRENT</string>
+    <string name="average">AVERAGE</string>
+    <string name="all">ALL</string>
+    <string name="remove_ads">REMOVE ADS</string>
+    <string name="rarity">Rarity</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="type">Type</string>
+    <string name="level">Level</string>
+    <string name="points_available">Points Available:</string>
+    <string name="optimize_gst">OPTIMIZE GST</string>
+    <string name="optimize_luck">OPTIMIZE LUCK</string>
+    <string name="est_gst_daily_limit">Est. GST / Daily Limit:</string>
+    <string name="durability_loss">Durability Loss:</string>
+    <string name="repair_cost">Repair Cost:</string>
+    <string name="hp_loss">HP Loss:</string>
+    <string name="restoration_cost">Restoration Cost:</string>
+    <string name="total_income">Total Income:</string>
+    <string name="disclaimer">Based on unofficial STEPN community data.\nActual results may vary.</string>
+    <string name="energy">Energy</string>
+    <string name="more_details">More Details</string>
+    <string name="mystery_box_chance">Mystery Box Chance</string>
+    <string name="reset_values">Reset Values</string>
+    <string name="select_socket_type">SELECT SOCKET TYPE</string>
+    <string name="select_chain">SELECT CHAIN</string>
+    <string name="current_prices">Current Prices</string>
+    <string name="income_gst_gem">Income (GST - Gem):</string>
+    <string name="gem_price">Gem Price:</string>
+    <string name="gem_price_in_gst">"Gem Price in GST × "</string>
+    <string name="total_income_gst">Total Income GST:</string>
+    <string name="total_income_usd">Total Income USD:</string>
+    <string name="select_a_price_to_edit">Select a price to edit.</string>
+    <string name="price_data_provided_by">Price data provided by</string>
+    <string name="gem">" Gem"</string>
+    <string name="points">" points"</string>
+    <string name="gem_points">"Gem points "</string>
+    <string name="total_points">Total Points:</string>
+    <string name="select_gem">SELECT GEM</string>
+    <string name="gem_">Gem:</string>
+    <string name="socket">Socket:</string>
+    <string name="see_details">See Details</string>
+    <string name="uncommon_socket">Uncommon Socket</string>
+    <string name="rare_socket">Rare Socket</string>
+    <string name="epic_socket">Epic Socket</string>
+    <string name="legendary_socket">Legendary Socket</string>
+    <string name="common_socket">Common Socket</string>
+    <string name="base_percent">"% base\n+ "</string>
+    <string name="base">Base</string>
+    <string name="are_you_sure_you_want_to_reset_all_values">Are you sure you want to reset all values?</string>
+    <string name="audible">AUDIBLE</string>
+    <string name="vibration">VIBRATION</string>
+    <string name="speed_alerts">Speed Alerts</string>
+    <string name="both">BOTH</string>
+    <string name="optimize_gmt">OPTIMIZE GMT</string>
+    <string name="est_gmt_range">Est. GMT / Min:</string>
+    <string name="chain">Chain</string>
+    <string name="token">Token</string>
+    <string name="comf_gem_price">Gem Price</string>
+    <string name="enter_gem_price">Enter Gem Price ↓</string>
+    <string name="notification_perms">Please choose whether or not to allow notifications. Notifications are only used to display information from the lockscreen during your workout.</string>
+</resources>

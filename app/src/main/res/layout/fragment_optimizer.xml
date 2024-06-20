@@ -1,0 +1,2418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_green"
+    tools:context="stepn.sidekick.stepnsidekick.MainActivity">
+
+    <EditText
+        android:id="@+id/focusThief"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/effTextView" />
+
+    <ImageView
+        android:id="@+id/backgroundThingShadow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="-3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundThingButton"
+        app:layout_constraintEnd_toEndOf="@id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/backgroundThingButton"
+        app:srcCompat="@drawable/button_start_shadow" />
+
+    <ImageButton
+        android:id="@+id/backgroundThingButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-30dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/resetTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/background_thing" />
+
+    <ImageView
+        android:id="@+id/shoeBackground"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/backgroundThingButton"
+        app:srcCompat="@drawable/circles_common" />
+
+    <ImageView
+        android:id="@+id/shoeTypeImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeBackground"
+        app:layout_constraintEnd_toEndOf="@+id/shoeBackground"
+        app:layout_constraintStart_toStartOf="@+id/shoeBackground"
+        app:layout_constraintTop_toTopOf="@+id/shoeBackground"
+        app:srcCompat="@mipmap/shoe_walker" />
+
+    <ImageView
+        android:id="@+id/gemSocketOneShadow"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketOne"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketOne"
+        app:srcCompat="@mipmap/gem_socket_gray_0"
+        app:tint="@color/gem_socket_shadow" />
+
+    <ImageView
+        android:id="@+id/gemSocketOne"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="-12dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/shoeBackground"
+        app:srcCompat="@mipmap/gem_socket_gray_0" />
+
+    <ImageView
+        android:id="@+id/gemSocketOneLockPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketOne"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketOne"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketOne"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketOne"
+        app:srcCompat="@drawable/gem_socket_lock" />
+
+    <Button
+        android:id="@+id/gemSocketOneButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketOne"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketOne"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketOne"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketOne" />
+
+    <ImageView
+        android:id="@+id/gemSocketTwoShadow"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketTwo"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketTwo"
+        app:srcCompat="@mipmap/gem_socket_gray_0"
+        app:tint="@color/gem_socket_shadow" />
+
+    <ImageView
+        android:id="@+id/gemSocketTwo"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="28dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="@id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/shoeBackground"
+        app:srcCompat="@mipmap/gem_socket_gray_0" />
+
+    <ImageView
+        android:id="@+id/gemSocketTwoLockPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketTwo"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketTwo"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketTwo"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketTwo"
+        app:srcCompat="@drawable/gem_socket_lock" />
+
+    <Button
+        android:id="@+id/gemSocketTwoButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketTwo"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketTwo"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketTwo"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketTwo" />
+
+    <ImageView
+        android:id="@+id/gemSocketThreeShadow"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketThree"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketThree"
+        app:srcCompat="@mipmap/gem_socket_gray_0"
+        app:tint="@color/gem_socket_shadow" />
+
+    <ImageView
+        android:id="@+id/gemSocketThree"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="-22dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/shoeBackground"
+        app:srcCompat="@mipmap/gem_socket_gray_0" />
+
+    <ImageView
+        android:id="@+id/gemSocketThreeLockPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketThree"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketThree"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketThree"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketThree"
+        app:srcCompat="@drawable/gem_socket_lock" />
+
+    <Button
+        android:id="@+id/gemSocketThreeButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketThree"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketThree"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketThree"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketThree" />
+
+    <ImageView
+        android:id="@+id/gemSocketFourShadow"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketFour"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketFour"
+        app:srcCompat="@mipmap/gem_socket_gray_0"
+        app:tint="@color/gem_socket_shadow" />
+
+    <ImageView
+        android:id="@+id/gemSocketFour"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="28dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="@id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/shoeBackground"
+        app:srcCompat="@mipmap/gem_socket_gray_0" />
+
+    <ImageView
+        android:id="@+id/gemSocketFourLockPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketFour"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketFour"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketFour"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketFour"
+        app:srcCompat="@drawable/gem_socket_lock" />
+
+    <Button
+        android:id="@+id/gemSocketFourButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gemSocketFour"
+        app:layout_constraintEnd_toEndOf="@+id/gemSocketFour"
+        app:layout_constraintStart_toStartOf="@+id/gemSocketFour"
+        app:layout_constraintTop_toTopOf="@+id/gemSocketFour" />
+
+    <ImageView
+        android:id="@+id/shoeNameButtonShadow"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/shoeNameImageView"
+        app:layout_constraintStart_toStartOf="@+id/shoeNameImageView"
+        app:layout_constraintTop_toTopOf="@+id/shoeNameImageView"
+        app:srcCompat="@drawable/button_start_shadow" />
+
+    <ImageView
+        android:id="@+id/shoeLock"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/shoeNameEditText"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/shoeNameEditText"
+        app:srcCompat="@mipmap/shoe_lock_open"  />
+
+    <Button
+        android:id="@+id/shoeLockButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeLock"
+        app:layout_constraintEnd_toEndOf="@+id/shoeLock"
+        app:layout_constraintStart_toStartOf="@+id/shoeLock"
+        app:layout_constraintTop_toTopOf="@+id/shoeLock" />
+
+    <TextView
+        android:id="@+id/shoeOneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_condensed_regular_italic"
+        android:text=""
+        android:textColor="@color/gandalf"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeTwoTextView"
+        app:layout_constraintEnd_toStartOf="@+id/shoeTwoTextView"
+        app:layout_constraintTop_toTopOf="@+id/shoeTwoTextView" />
+
+    <TextView
+        android:id="@+id/shoeTwoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="1"
+        android:textColor="@color/almost_black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/shoeNameImageView"
+        app:layout_constraintStart_toStartOf="@+id/shoeNameImageView"
+        app:layout_constraintTop_toBottomOf="@+id/shoeNameImageView" />
+
+    <TextView
+        android:id="@+id/shoeThreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_condensed_regular_italic"
+        android:text="2"
+        android:textColor="@color/gandalf"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeTwoTextView"
+        app:layout_constraintStart_toEndOf="@+id/shoeTwoTextView"
+        app:layout_constraintTop_toTopOf="@+id/shoeTwoTextView" />
+
+    <ImageView
+        android:id="@+id/shoeNameImageView"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/gemSocketFour"
+        app:srcCompat="@drawable/box_name_common" />
+
+    <ImageView
+        android:id="@+id/leftArrowImageView"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="40dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeTwoTextView"
+        app:layout_constraintEnd_toStartOf="@+id/shoeTwoTextView"
+        app:layout_constraintTop_toTopOf="@+id/shoeTwoTextView"
+        app:srcCompat="@mipmap/arrow_left" />
+
+    <ImageView
+        android:id="@+id/rightArrowImageView"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeTwoTextView"
+        app:layout_constraintStart_toEndOf="@+id/shoeTwoTextView"
+        app:layout_constraintTop_toTopOf="@+id/shoeTwoTextView"
+        app:srcCompat="@mipmap/arrow_right" />
+
+    <Button
+        android:id="@+id/leftArrowButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/leftArrowImageView"
+        app:layout_constraintEnd_toEndOf="@+id/leftArrowImageView"
+        app:layout_constraintStart_toStartOf="@+id/leftArrowImageView"
+        app:layout_constraintTop_toTopOf="@+id/leftArrowImageView" />
+
+    <Button
+        android:id="@+id/rightArrowButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/rightArrowImageView"
+        app:layout_constraintEnd_toEndOf="@+id/rightArrowImageView"
+        app:layout_constraintStart_toStartOf="@+id/rightArrowImageView"
+        app:layout_constraintTop_toTopOf="@+id/rightArrowImageView" />
+
+    <EditText
+        android:id="@+id/shoeNameEditText"
+        style="@style/BoldItalicSubtitles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-4dp"
+        android:layout_marginEnd="-4dp"
+        android:background="@null"
+        android:hint="@string/shoe_name"
+        android:inputType="textCapWords"
+        android:maxLength="16"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="8dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shoeNameImageView"
+        app:layout_constraintEnd_toEndOf="@+id/shoeNameImageView"
+        app:layout_constraintStart_toStartOf="@+id/shoeNameImageView"
+        app:layout_constraintTop_toTopOf="@+id/shoeNameImageView" />
+
+    <Button
+        android:id="@+id/oneTwentyFiveButton"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRow"
+        app:layout_constraintTop_toTopOf="@+id/buttonRow" />
+
+    <LinearLayout
+        android:id="@+id/buttonRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/shoeTwoTextView">
+
+        <LinearLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rarityLabelTextView"
+                style="@style/RegItalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/rarity"
+                android:textColor="@color/gandalf"
+                android:textSize="14dp" />
+
+            <FrameLayout
+                android:id="@+id/rarityButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/shoeRarityBoxShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/button_main_shadow" />
+
+                <TextView
+                    android:id="@+id/shoeRarityShadowTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_condensed_bold_italic"
+                    android:text="Common"
+                    android:textColor="@color/almost_black"
+                    android:textSize="15dp" />
+
+                <ImageButton
+                    android:id="@+id/shoeRarityButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_common" />
+
+                <TextView
+                    android:id="@+id/shoeRarityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/roboto_condensed_bold_italic"
+                    android:text="Common"
+                    android:textColor="@color/almost_black"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/midLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shoeTypeLabelTextView"
+                style="@style/RegItalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/type"
+                android:textColor="@color/gandalf"
+                android:textSize="14dp" />
+
+            <FrameLayout
+                android:id="@+id/typeButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/shoeTypeBoxShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/button_main_shadow" />
+
+                <LinearLayout
+                    android:id="@+id/shoeTypeLayoutShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/footprint3ShadowImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="3dp"
+                        android:adjustViewBounds="true"
+                        android:visibility="gone"
+                        app:srcCompat="@mipmap/footprint" />
+
+                    <ImageView
+                        android:id="@+id/footprint2ShadowImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="3dp"
+                        android:adjustViewBounds="true"
+                        android:visibility="gone"
+                        app:srcCompat="@mipmap/footprint" />
+
+                    <ImageView
+                        android:id="@+id/footprint1ShadowImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="4dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@mipmap/footprint" />
+
+                    <TextView
+                        android:id="@+id/shoeTypeShadowTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_condensed_bold_italic"
+                        android:text="Walker"
+                        android:textColor="@color/almost_black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/shoeTypeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_common" />
+
+                <LinearLayout
+                    android:id="@+id/shoeTypeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/footprint3ImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="2dp"
+                        android:adjustViewBounds="true"
+                        android:visibility="gone"
+                        app:srcCompat="@mipmap/footprint" />
+
+                    <ImageView
+                        android:id="@+id/footprint2ImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="2dp"
+                        android:adjustViewBounds="true"
+                        android:visibility="gone"
+                        app:srcCompat="@mipmap/footprint" />
+
+                    <ImageView
+                        android:id="@+id/footprint1ImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="4dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@mipmap/footprint" />
+
+                    <TextView
+                        android:id="@+id/shoeTypeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/roboto_condensed_bold_italic"
+                        android:text="Walker"
+                        android:textColor="@color/almost_black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/RightLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oneTwentyFiveTextView"
+                    style="@style/RegItalic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textColor="@color/gandalf"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/energyLabelTextView"
+                    style="@style/RegItalic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/energy"
+                    android:textColor="@color/gandalf"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/energyBoxOptimizerShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/box_energy_input"
+                    app:tint="@color/energy_blue_border" />
+
+                <ImageView
+                    android:id="@+id/energyBoxOptimizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:srcCompat="@drawable/box_energy_input" />
+
+                <ImageView
+                    android:id="@+id/energyBolt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="24dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@mipmap/energy_bolt" />
+
+                <EditText
+                    android:id="@+id/energyToSpendOptimizerEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="6dp"
+                    android:textColor="@color/almost_black"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_condensed_bold_italic"
+                    android:hint="0.0"
+                    android:inputType="number|numberDecimal"
+                    android:maxLength="4"
+                    android:paddingVertical="8dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/seekbarBackground"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRow"
+        app:srcCompat="@drawable/seekbar_level_background" />
+
+    <ImageView
+        android:id="@+id/seekbarMinLevel"
+        android:layout_width="25dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/seekbarBackground"
+        app:layout_constraintStart_toStartOf="@+id/seekbarBackground"
+        app:layout_constraintTop_toTopOf="@+id/seekbarBackground"
+        app:srcCompat="@drawable/seekbar_level_progress" />
+
+    <SeekBar
+        android:id="@+id/levelSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="-2dp"
+        android:layout_marginEnd="-2dp"
+        android:max="29"
+        android:progress="0"
+        android:progressDrawable="@drawable/level_seekbar"
+        android:splitTrack="false"
+        android:thumb="@drawable/seekbar_level_thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/seekbarBackground"
+        app:layout_constraintEnd_toEndOf="@+id/seekbarBackground"
+        app:layout_constraintStart_toStartOf="@+id/seekbarBackground"
+        app:layout_constraintTop_toTopOf="@+id/seekbarBackground" />
+
+    <TextView
+        android:id="@+id/levelLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        style="@style/BoldItalicSubtitles"
+        android:text="@string/level"
+        android:textColor="@color/almost_black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekbarBackground"
+        app:layout_constraintStart_toStartOf="@+id/seekbarBackground"
+        app:layout_constraintTop_toTopOf="@+id/seekbarBackground" />
+
+    <TextView
+        android:id="@+id/levelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        style="@style/BoldItalicSubtitles"
+        android:text="1"
+        android:textColor="@color/almost_black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekbarBackground"
+        app:layout_constraintStart_toEndOf="@+id/levelLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/seekbarBackground" />
+
+    <TextView
+        android:id="@+id/attributesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="109dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="Attributes"
+        android:textColor="@color/almost_black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/seekbarBackground" />
+
+    <TextView
+        android:id="@+id/baseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="Base"
+        android:textColor="@color/almost_black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/totalTextView"
+        app:layout_constraintStart_toEndOf="@+id/attributesTextView"
+        app:layout_constraintTop_toTopOf="@+id/totalTextView" />
+
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="Total"
+        android:textColor="@color/almost_black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/attributesTextView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton" />
+
+    <ImageView
+        android:id="@+id/effIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/attributesTextView"
+        app:srcCompat="@mipmap/gem_symbol_efficiency" />
+
+    <TextView
+        android:id="@+id/effTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="Efficiency"
+        android:textColor="@color/almost_black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/effIcon"
+        app:layout_constraintStart_toEndOf="@+id/effIcon"
+        app:layout_constraintTop_toTopOf="@+id/effIcon" />
+
+    <ImageView
+        android:id="@+id/luckIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/effIcon"
+        app:srcCompat="@mipmap/gem_symbol_luck" />
+
+
+    <TextView
+        android:id="@+id/luckTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="Luck"
+        android:textColor="@color/almost_black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/luckIcon"
+        app:layout_constraintStart_toEndOf="@+id/luckIcon"
+        app:layout_constraintTop_toTopOf="@+id/luckIcon" />
+
+    <ImageView
+        android:id="@+id/comfIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/luckIcon"
+        app:srcCompat="@mipmap/gem_symbol_comfort" />
+
+    <TextView
+        android:id="@+id/comfortTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="Comfort"
+        android:textColor="@color/almost_black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comfIcon"
+        app:layout_constraintStart_toEndOf="@+id/comfIcon"
+        app:layout_constraintTop_toTopOf="@+id/comfIcon" />
+
+    <ImageView
+        android:id="@+id/resIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/comfIcon"
+        app:srcCompat="@mipmap/gem_symbol_res" />
+
+    <TextView
+        android:id="@+id/resTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="Resilience"
+        android:textColor="@color/almost_black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resIcon"
+        app:layout_constraintStart_toEndOf="@+id/resIcon"
+        app:layout_constraintTop_toTopOf="@+id/resIcon" />
+
+    <EditText
+        android:id="@+id/baseEffEditText"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@null"
+        android:fontFamily="@font/roboto_condensed_regular_italic"
+        android:hint="1-10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/effTextView"
+        app:layout_constraintEnd_toEndOf="@+id/baseTextView"
+        app:layout_constraintStart_toStartOf="@+id/baseTextView"
+        app:layout_constraintTop_toTopOf="@+id/effTextView" />
+
+    <TextView
+        android:id="@+id/subEffTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/effTextView"
+        app:layout_constraintEnd_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/effTextView" />
+
+    <Button
+        android:id="@+id/subEffButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/subEffTextView"
+        app:layout_constraintEnd_toEndOf="@+id/subEffTextView"
+        app:layout_constraintStart_toStartOf="@+id/subEffTextView"
+        app:layout_constraintTop_toTopOf="@+id/subEffTextView" />
+
+    <TextView
+        android:id="@+id/totalEffTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/almost_black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/effTextView"
+        app:layout_constraintEnd_toEndOf="@+id/totalTextView"
+        app:layout_constraintStart_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/effTextView" />
+
+    <TextView
+        android:id="@+id/addEffTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/effTextView"
+        app:layout_constraintStart_toEndOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/effTextView" />
+
+    <Button
+        android:id="@+id/addEffButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/addEffTextView"
+        app:layout_constraintEnd_toEndOf="@+id/addEffTextView"
+        app:layout_constraintStart_toStartOf="@+id/addEffTextView"
+        app:layout_constraintTop_toTopOf="@+id/addEffTextView" />
+
+    <EditText
+        android:id="@+id/baseLuckEditText"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@null"
+        android:fontFamily="@font/roboto_condensed_regular_italic"
+        android:hint="1-10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/luckTextView"
+        app:layout_constraintEnd_toEndOf="@+id/baseTextView"
+        app:layout_constraintStart_toStartOf="@+id/baseTextView"
+        app:layout_constraintTop_toTopOf="@+id/luckTextView" />
+
+    <TextView
+        android:id="@+id/subLuckTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/luckTextView"
+        app:layout_constraintEnd_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/luckTextView" />
+
+    <Button
+        android:id="@+id/subLuckButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/subLuckTextView"
+        app:layout_constraintEnd_toEndOf="@+id/subLuckTextView"
+        app:layout_constraintStart_toStartOf="@+id/subLuckTextView"
+        app:layout_constraintTop_toTopOf="@+id/subLuckTextView" />
+
+    <TextView
+        android:id="@+id/totalLuckTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/almost_black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/luckTextView"
+        app:layout_constraintEnd_toEndOf="@+id/totalTextView"
+        app:layout_constraintStart_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/luckTextView" />
+
+    <TextView
+        android:id="@+id/addLuckTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/luckTextView"
+        app:layout_constraintStart_toEndOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/luckTextView" />
+
+    <Button
+        android:id="@+id/addLuckButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/addLuckTextView"
+        app:layout_constraintEnd_toEndOf="@+id/addLuckTextView"
+        app:layout_constraintStart_toStartOf="@+id/addLuckTextView"
+        app:layout_constraintTop_toTopOf="@+id/addLuckTextView" />
+
+    <EditText
+        android:id="@+id/baseComfortEditText"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@null"
+        android:fontFamily="@font/roboto_condensed_regular_italic"
+        android:hint="1-10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comfortTextView"
+        app:layout_constraintEnd_toEndOf="@+id/baseTextView"
+        app:layout_constraintStart_toStartOf="@+id/baseTextView"
+        app:layout_constraintTop_toTopOf="@+id/comfortTextView" />
+
+    <TextView
+        android:id="@+id/subComfTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comfortTextView"
+        app:layout_constraintEnd_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/comfortTextView" />
+
+    <Button
+        android:id="@+id/subComfButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/subComfTextView"
+        app:layout_constraintEnd_toEndOf="@+id/subComfTextView"
+        app:layout_constraintStart_toStartOf="@+id/subComfTextView"
+        app:layout_constraintTop_toTopOf="@+id/subComfTextView" />
+
+    <TextView
+        android:id="@+id/totalComfTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/almost_black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comfortTextView"
+        app:layout_constraintEnd_toEndOf="@+id/totalTextView"
+        app:layout_constraintStart_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/comfortTextView" />
+
+    <TextView
+        android:id="@+id/addComfTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comfortTextView"
+        app:layout_constraintStart_toEndOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/comfortTextView" />
+
+    <Button
+        android:id="@+id/addComfButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/addComfTextView"
+        app:layout_constraintEnd_toEndOf="@+id/addComfTextView"
+        app:layout_constraintStart_toStartOf="@+id/addComfTextView"
+        app:layout_constraintTop_toTopOf="@+id/addComfTextView" />
+
+    <EditText
+        android:id="@+id/baseResEditText"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:background="@null"
+        android:fontFamily="@font/roboto_condensed_regular_italic"
+        android:hint="1-10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resTextView"
+        app:layout_constraintEnd_toEndOf="@+id/baseTextView"
+        app:layout_constraintStart_toStartOf="@+id/baseTextView"
+        app:layout_constraintTop_toTopOf="@+id/resTextView" />
+
+    <TextView
+        android:id="@+id/subResTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resTextView"
+        app:layout_constraintEnd_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/resTextView" />
+
+    <Button
+        android:id="@+id/subResButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/subResTextView"
+        app:layout_constraintEnd_toEndOf="@+id/subResTextView"
+        app:layout_constraintStart_toStartOf="@+id/subResTextView"
+        app:layout_constraintTop_toTopOf="@+id/subResTextView" />
+
+    <TextView
+        android:id="@+id/totalResTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/almost_black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resTextView"
+        app:layout_constraintEnd_toEndOf="@+id/totalTextView"
+        app:layout_constraintStart_toStartOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/resTextView" />
+
+    <TextView
+        android:id="@+id/addResTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/gem_socket_shadow"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/resTextView"
+        app:layout_constraintStart_toEndOf="@+id/totalTextView"
+        app:layout_constraintTop_toTopOf="@+id/resTextView" />
+
+    <Button
+        android:id="@+id/addResButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/addResTextView"
+        app:layout_constraintEnd_toEndOf="@+id/addResTextView"
+        app:layout_constraintStart_toStartOf="@+id/addResTextView"
+        app:layout_constraintTop_toTopOf="@+id/addResTextView" />
+
+    <TextView
+        android:id="@+id/pointsLabelTextView"
+        style="@style/RegItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/points_available"
+        android:textColor="@color/gandalf"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/pointsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/resTextView" />
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        style="@style/BoldItalicSubtitles"
+        android:text="0"
+        android:textColor="@color/gandalf"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/resTextView" />
+
+    <ImageView
+        android:id="@+id/optimizeLuckButtonShadow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-2dp"
+        app:layout_constraintEnd_toEndOf="@+id/optimizeLuckButton"
+        app:layout_constraintStart_toStartOf="@+id/optimizeLuckButton"
+        app:layout_constraintTop_toTopOf="@+id/optimizeLuckButton"
+        app:srcCompat="@drawable/button_start_shadow" />
+
+    <TextView
+        android:id="@+id/optimizeLuckTextViewShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BoldItalicSubtitles"
+        android:text="@string/optimize_luck"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/optimizeLuckButtonShadow"
+        app:layout_constraintEnd_toEndOf="@+id/optimizeLuckButtonShadow"
+        app:layout_constraintStart_toStartOf="@+id/optimizeLuckButtonShadow"
+        app:layout_constraintTop_toTopOf="@+id/optimizeLuckButtonShadow" />
+
+    <ImageButton
+        android:id="@+id/optimizeLuckButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toEndOf="@+id/optimizeGmtButton"
+        app:layout_constraintTop_toBottomOf="@+id/pointsLabelTextView"
+        app:srcCompat="@drawable/button_start" />
+
+    <TextView
+        android:id="@+id/optimizeLuckTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BoldItalicSubtitles"
+        android:text="@string/optimize_luck"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/optimizeLuckButton"
+        app:layout_constraintEnd_toEndOf="@+id/optimizeLuckButton"
+        app:layout_constraintStart_toStartOf="@+id/optimizeLuckButton"
+        app:layout_constraintTop_toTopOf="@+id/optimizeLuckButton" />
+
+
+    <ImageView
+        android:id="@+id/optimizeGstButtonShadow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-2dp"
+        app:layout_constraintEnd_toEndOf="@+id/optimizeGmtButton"
+        app:layout_constraintStart_toStartOf="@+id/optimizeGmtButton"
+        app:layout_constraintTop_toTopOf="@+id/optimizeGmtButton"
+        app:srcCompat="@drawable/button_start_shadow" />
+
+    <TextView
+        android:id="@+id/optimizeGstGmtTextViewShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BoldItalicSubtitles"
+        android:text="@string/optimize_gst"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/optimizeGstButtonShadow"
+        app:layout_constraintEnd_toEndOf="@+id/optimizeGstButtonShadow"
+        app:layout_constraintStart_toStartOf="@+id/optimizeGstButtonShadow"
+        app:layout_constraintTop_toTopOf="@+id/optimizeGstButtonShadow" />
+
+    <ImageButton
+        android:id="@+id/optimizeGmtButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        app:layout_constraintEnd_toStartOf="@+id/optimizeLuckButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/pointsLabelTextView"
+        app:srcCompat="@drawable/button_start" />
+
+    <TextView
+        android:id="@+id/optimizeGstGmtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BoldItalicSubtitles"
+        android:text="@string/optimize_gst"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/optimizeGmtButton"
+        app:layout_constraintEnd_toEndOf="@+id/optimizeGmtButton"
+        app:layout_constraintStart_toStartOf="@+id/optimizeGmtButton"
+        app:layout_constraintTop_toTopOf="@+id/optimizeGmtButton" />
+
+    <TextView
+        android:id="@+id/estGstGmtLabelTextView"
+        style="@style/RegItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/est_gst_daily_limit"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/optimizeGmtButton" />
+
+    <ImageView
+        android:id="@+id/gstGmtIconLimit"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gstPerDayTextView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/gstPerDayTextView"
+        app:srcCompat="@drawable/coin_gst" />
+
+    <Button
+        android:id="@+id/toggleGstEstLimitButton"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gstPerDayTextView"
+        app:layout_constraintEnd_toEndOf="@+id/gstPerDayTextView"
+        app:layout_constraintStart_toStartOf="@+id/gstPerDayTextView"
+        app:layout_constraintTop_toTopOf="@+id/gstPerDayTextView" />
+
+    <TextView
+        android:id="@+id/gstPerDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0.0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/estGstGmtLabelTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gstLimitPerDaySlashTextView"
+        app:layout_constraintTop_toTopOf="@+id/estGstGmtLabelTextView" />
+
+    <Button
+        android:id="@+id/changeGstLimitButton"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gstLimitPerDayTextView"
+        app:layout_constraintEnd_toEndOf="@+id/gstLimitPerDayTextView"
+        app:layout_constraintStart_toStartOf="@+id/gstLimitPerDayTextView"
+        app:layout_constraintTop_toTopOf="@+id/gstLimitPerDayTextView" />
+
+    <TextView
+        android:id="@+id/gstLimitPerDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/gstGmtIconLimit"
+        app:layout_constraintTop_toTopOf="@+id/gstPerDayTextView" />
+
+    <TextView
+        android:id="@+id/gstLimitPerDaySlashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="/"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/gstLimitPerDayTextView"
+        app:layout_constraintTop_toTopOf="@+id/gstPerDayTextView" />
+
+    <TextView
+        android:id="@+id/durabilityLabelTextView"
+        style="@style/RegItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/durability_loss"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/estGstGmtLabelTextView" />
+
+    <TextView
+        android:id="@+id/durabilityLossTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/durabilityLabelTextView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/durabilityLabelTextView" />
+
+    <TextView
+        android:id="@+id/repairDurLabelTextView"
+        style="@style/RegItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/repair_cost"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/durabilityLabelTextView" />
+
+    <ImageView
+        android:id="@+id/gstIconRepair"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repairCostDurTextView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/repairCostDurTextView"
+        app:srcCompat="@drawable/coin_gst" />
+
+    <TextView
+        android:id="@+id/repairCostDurTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repairDurLabelTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gstIconRepair"
+        app:layout_constraintTop_toTopOf="@+id/repairDurLabelTextView" />
+
+    <TextView
+        android:id="@+id/hpLabelTextView"
+        style="@style/RegItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/hp_loss"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/repairDurLabelTextView" />
+
+    <TextView
+        android:id="@+id/hpLossTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hpLabelTextView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/hpLabelTextView" />
+
+    <TextView
+        android:id="@+id/repairHpLabelTextView"
+        style="@style/RegItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/restoration_cost"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/hpLabelTextView" />
+
+    <TextView
+        android:id="@+id/gemMultipleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0.0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repairHpLabelTextView"
+        app:layout_constraintEnd_toStartOf="@+id/comfGemHpRepair"
+        app:layout_constraintTop_toTopOf="@+id/repairHpLabelTextView" />
+
+    <ImageView
+        android:id="@+id/comfGemHpRepair"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repairCostHpTextView"
+        app:layout_constraintEnd_toStartOf="@+id/repairCostHpPlusTextView"
+        app:layout_constraintTop_toTopOf="@+id/repairCostHpTextView"
+        app:srcCompat="@mipmap/gem_comf_level1" />
+
+    <Button
+        android:id="@+id/changeComfGemButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/comfGemHpRepair"
+        app:layout_constraintEnd_toEndOf="@+id/comfGemHpRepair"
+        app:layout_constraintStart_toStartOf="@+id/comfGemHpRepair"
+        app:layout_constraintTop_toTopOf="@+id/comfGemHpRepair" />
+
+    <TextView
+        android:id="@+id/repairCostHpPlusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="+"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/repairCostHpTextView"
+        app:layout_constraintTop_toTopOf="@+id/gemMultipleTextView" />
+
+
+    <TextView
+        android:id="@+id/repairCostHpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/gstIconRestore"
+        app:layout_constraintTop_toTopOf="@+id/gemMultipleTextView" />
+
+    <ImageView
+        android:id="@+id/gstIconRestore"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repairCostHpTextView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toTopOf="@+id/repairCostHpTextView"
+        app:srcCompat="@drawable/coin_gst" />
+
+    <TextView
+        android:id="@+id/totalIncomeLabelTextView"
+        style="@style/BoldItalicSubtitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/total_income"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/repairHpLabelTextView" />
+
+    <ImageView
+        android:id="@+id/gmtIconTotal"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gemMultipleTotalTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gmtTotalMinusTextView"
+        app:layout_constraintTop_toTopOf="@+id/gemMultipleTotalTextView"
+        app:srcCompat="@drawable/coin_gmt" />
+
+    <Button
+        android:id="@+id/changeGmtEstimateButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gmtIconTotal"
+        app:layout_constraintEnd_toEndOf="@+id/gmtIconTotal"
+        app:layout_constraintStart_toStartOf="@+id/gmtIconTotal"
+        app:layout_constraintTop_toTopOf="@+id/gmtIconTotal" />
+
+    <TextView
+        android:id="@+id/gmtIncomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalIncomeLabelTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gmtIconTotal"
+        app:layout_constraintTop_toTopOf="@+id/totalIncomeLabelTextView" />
+
+    <TextView
+        android:id="@+id/gmtTotalMinusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="-"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gstIncomeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gstIncomeTextView"
+        app:layout_constraintTop_toTopOf="@+id/gstIncomeTextView" />
+
+    <ImageView
+        android:id="@+id/gstIconTotal"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gemMultipleTotalTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gemMultipleTotalTextView"
+        app:layout_constraintTop_toTopOf="@+id/gemMultipleTotalTextView"
+        app:srcCompat="@drawable/coin_gst" />
+
+    <TextView
+        android:id="@+id/gstIncomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalIncomeLabelTextView"
+        app:layout_constraintEnd_toStartOf="@+id/gstIconTotal"
+        app:layout_constraintTop_toTopOf="@+id/totalIncomeLabelTextView" />
+
+    <TextView
+        android:id="@+id/gemMultipleTotalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="- 0.0"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gstIncomeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/comfGemHpTotalRepair"
+        app:layout_constraintTop_toTopOf="@+id/gstIncomeTextView" />
+
+    <ImageView
+        android:id="@+id/comfGemHpTotalRepair"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:paddingTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gemMultipleTotalTextView"
+        app:layout_constraintEnd_toEndOf="@+id/gstIconRestore"
+        app:layout_constraintStart_toStartOf="@+id/gstIconRestore"
+        app:layout_constraintTop_toTopOf="@+id/gemMultipleTotalTextView"
+        app:srcCompat="@mipmap/gem_comf_level1" />
+
+    <TextView
+        android:id="@+id/totalIncomeUsdLabelTextView"
+        style="@style/BoldItalicSubtitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/total_income_usd"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/totalIncomeLabelTextView" />
+
+    <TextView
+        android:id="@+id/totalIncomeUsdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:text="-"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalIncomeUsdLabelTextView"
+        app:layout_constraintEnd_toStartOf="@+id/totalIncomeUsdSymbol"
+        app:layout_constraintTop_toTopOf="@+id/totalIncomeUsdLabelTextView" />
+
+    <TextView
+        android:id="@+id/totalIncomeUsdSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="$"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalIncomeUsdLabelTextView"
+        app:layout_constraintEnd_toEndOf="@+id/comfGemHpTotalRepair"
+        app:layout_constraintStart_toStartOf="@+id/comfGemHpTotalRepair"
+        app:layout_constraintTop_toTopOf="@+id/totalIncomeUsdLabelTextView" />
+
+    <LinearLayout
+        android:id="@+id/tokenChainSwitchButtonRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/totalIncomeUsdLabelTextView">
+
+        <LinearLayout
+            android:id="@+id/leftLowerLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chainLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/RegItalic"
+                android:text="@string/chain"
+                android:textColor="@color/gandalf"
+                android:textSize="14dp" />
+
+            <FrameLayout
+                android:id="@+id/chainButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/chainBoxShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/button_main_shadow" />
+
+                <TextView
+                    android:id="@+id/chainShadowTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_condensed_bold_italic"
+                    android:text="SOL"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <ImageButton
+                    android:id="@+id/chainButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_sol" />
+
+                <TextView
+                    android:id="@+id/chainTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/roboto_condensed_bold_italic"
+                    android:text="SOL"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/midLowerLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coinLabelTextView"
+                style="@style/RegItalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/token"
+                android:textColor="@color/gandalf"
+                android:textSize="14dp" />
+
+            <FrameLayout
+                android:id="@+id/coinButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/coinBoxShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/button_main_shadow" />
+
+                <LinearLayout
+                    android:id="@+id/coinLayoutShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/coinTextViewShadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/roboto_condensed_bold_italic"
+                        android:text="GST"
+                        android:textColor="@color/almost_black"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/coinImageViewShadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginBottom="2dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/logo_gst" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/coinTypeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_gst" />
+
+                <LinearLayout
+                    android:id="@+id/coinTypeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/coinTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/roboto_condensed_bold_italic"
+                        android:text="GST"
+                        android:textColor="@color/almost_black"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/coinImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginBottom="2dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/logo_gst" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/RightLowerLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gemPriceLabelTextView"
+                style="@style/RegItalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_gravity="center"
+                android:text="@string/comf_gem_price"
+                android:textColor="@color/gandalf"
+                android:textSize="14dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gemPriceBoxShadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/button_main_shadow" />
+
+                <ImageView
+                    android:id="@+id/gemPriceBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:srcCompat="@drawable/box_gem_price_input" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/gemPriceEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:background="@null"
+                        android:fontFamily="@font/roboto_condensed_bold_italic"
+                        android:hint="0.0"
+                        android:inputType="number|numberDecimal"
+                        android:maxLength="6"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/gmtLogoGemPriceImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@mipmap/logo_gmt_solid"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mysteryBoxChanceTextView"
+        style="@style/BoldItalicSubtitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/mystery_box_chance"
+        android:textColor="@color/almost_black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/tokenChainSwitchButtonRow" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxChanceTextView"
+        app:srcCompat="@mipmap/mb1"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl1Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl1"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl1"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl1" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl3"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl1"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxChanceTextView"
+        app:srcCompat="@mipmap/mb2"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl2Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:layout_marginTop="-2dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl2"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl2"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl2" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl4"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl2"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxChanceTextView"
+        app:srcCompat="@mipmap/mb3"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl3Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl3"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl3"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl3" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl5"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl3"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxChanceTextView"
+        app:srcCompat="@mipmap/mb4"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl4Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl4"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl4"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl3" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl4"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxChanceTextView"
+        app:srcCompat="@mipmap/mb5"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl5Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl5"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl5"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl5" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl7"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/mbLvl5Percent"
+        app:srcCompat="@mipmap/mb6"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl6Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl6"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl6"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl6" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl8"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl6"
+        app:layout_constraintTop_toBottomOf="@+id/mbLvl5Percent"
+        app:srcCompat="@mipmap/mb7"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl7Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl7"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl7"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl7" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl9"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl7"
+        app:layout_constraintTop_toBottomOf="@+id/mbLvl5Percent"
+        app:srcCompat="@mipmap/mb8"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl8Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl8"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl8"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl8" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toStartOf="@id/mysteryBoxLvl10"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl8"
+        app:layout_constraintTop_toBottomOf="@+id/mbLvl5Percent"
+        app:srcCompat="@mipmap/mb9"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl9Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl9"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl9"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl9" />
+
+    <ImageView
+        android:id="@+id/mysteryBoxLvl10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toEndOf="@+id/mysteryBoxLvl9"
+        app:layout_constraintTop_toBottomOf="@+id/mbLvl5Percent"
+        app:srcCompat="@mipmap/mb10"
+        app:tint="@color/gandalf" />
+
+    <TextView
+        android:id="@+id/mbLvl10Percent"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mysteryBoxLvl10"
+        app:layout_constraintStart_toStartOf="@+id/mysteryBoxLvl10"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl10" />
+
+    <ProgressBar
+        android:id="@+id/mbLoadingSpinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="@+id/mysteryBoxLvl1"
+        app:layout_constraintBottom_toBottomOf="@+id/mysteryBoxLvl10"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton" />
+
+    <TextView
+        android:id="@+id/resetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BoldItalicSubtitles"
+        android:layout_marginTop="24dp"
+        android:text="@string/reset_values"
+        android:textColor="@color/gandalf"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/mysteryBoxLvl10" />
+
+    <Button
+        android:id="@+id/resetPageButton"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#00FFFFFF"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/resetTextView"
+        app:layout_constraintEnd_toEndOf="@+id/resetTextView"
+        app:layout_constraintStart_toStartOf="@+id/resetTextView"
+        app:layout_constraintTop_toTopOf="@+id/resetTextView" />
+
+    <TextView
+        android:id="@+id/communityDataTextView"
+        style="@style/RegText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="110dp"
+        android:text="@string/disclaimer"
+        android:textAlignment="center"
+        android:textColor="@color/gandalf"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundThingButton"
+        app:layout_constraintStart_toStartOf="@+id/backgroundThingButton"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundThingButton" />
+
+    <TextView
+        android:id="@+id/pricesDataNoteTextView"
+        style="@style/RegText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/price_data_provided_by"
+        android:textAlignment="center"
+        android:textColor="@color/gandalf"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coinGeckoLogo"
+        app:layout_constraintEnd_toStartOf="@+id/coinGeckoLogo"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coinGeckoLogo" />
+
+    <ImageView
+        android:id="@+id/coinGeckoLogo"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pricesDataNoteTextView"
+        app:layout_constraintTop_toBottomOf="@+id/communityDataTextView"
+        app:srcCompat="@mipmap/coin_gecko" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

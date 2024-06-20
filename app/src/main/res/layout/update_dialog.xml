@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <ImageView
+        android:id="@+id/alertBoxBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="-24dp"
+        app:layout_constraintBottom_toBottomOf="@id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alert_box" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/BoldItalicSubtitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:includeFontPadding="false"
+        android:text="@string/update"
+        android:textColor="@color/gandalf"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/alertBoxBackground"
+        app:layout_constraintStart_toStartOf="@+id/alertBoxBackground"
+        app:layout_constraintTop_toTopOf="@+id/alertBoxBackground" />
+
+    <TextView
+        android:id="@+id/bulletsTextView"
+        style="@style/RegText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:includeFontPadding="false"
+        android:text="•"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/alertBoxBackground"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/updateListTextView"
+        style="@style/RegText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:includeFontPadding="false"
+        android:text="Mystery box probabilities are now displayed to give a better idea of what level of box you can expect"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/alertBoxBackground"
+        app:layout_constraintStart_toEndOf="@+id/bulletsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/bullets2TextView"
+        style="@style/RegText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:includeFontPadding="false"
+        android:text="•"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/alertBoxBackground"
+        app:layout_constraintTop_toBottomOf="@+id/updateListTextView" />
+
+
+    <TextView
+        android:id="@+id/updateList2TextView"
+        style="@style/RegText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:includeFontPadding="false"
+        android:text="Probabilities are based on a prediction model that uses community data gathered by the gam3.fi team"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/alertBoxBackground"
+        app:layout_constraintStart_toEndOf="@+id/bulletsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/updateListTextView" />
+
+    <TextView
+        android:id="@+id/bullets3TextView"
+        style="@style/RegText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:includeFontPadding="false"
+        android:text="•"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/alertBoxBackground"
+        app:layout_constraintTop_toBottomOf="@+id/updateList2TextView" />
+
+
+    <TextView
+        android:id="@+id/updateList3TextView"
+        style="@style/RegText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:includeFontPadding="false"
+        android:text="GMT earning estimates have been updated (and will be updated more often in the future)"
+        android:textColor="@color/almost_black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/alertBoxBackground"
+        app:layout_constraintStart_toEndOf="@+id/bulletsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/updateList2TextView" />
+
+    <ImageView
+        android:id="@+id/nextButtonShadow"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toTopOf="@+id/nextButton"
+        app:srcCompat="@drawable/button_start_shadow" />
+
+    <TextView
+        android:id="@+id/nextButtonShadowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:includeFontPadding="false"
+        android:text="@string/okay"
+        android:textAlignment="center"
+        android:textColor="@color/almost_black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextButtonShadow"
+        app:layout_constraintEnd_toEndOf="@+id/nextButtonShadow"
+        app:layout_constraintStart_toStartOf="@+id/nextButtonShadow"
+        app:layout_constraintTop_toTopOf="@+id/nextButtonShadow" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:src="@drawable/button_start"
+        app:layout_constraintEnd_toEndOf="@+id/updateListTextView"
+        app:layout_constraintTop_toBottomOf="@+id/updateList3TextView" />
+
+    <TextView
+        android:id="@+id/nextButtonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:includeFontPadding="false"
+        android:text="@string/okay"
+        android:textAlignment="center"
+        android:textColor="@color/almost_black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toTopOf="@+id/nextButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

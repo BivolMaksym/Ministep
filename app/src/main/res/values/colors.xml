@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#F61F1F</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="yellow_accent">#f9b844</color>
+    <color name="light_green">#d9fff2</color>
+    <color name="button_green">#65ffcb</color>
+    <color name="button_green_darker">#5FF3C0</color>
+    <color name="button_disabled">#f5f5f5</color>
+    <color name="almost_black">#3b3831</color>
+    <color name="almost_black_background">#28292e</color>
+    <color name="less_black_foreground">#3c3c3c</color>
+    <color name="gandalf">#FF88797D</color>
+    <color name="gem_socket_shadow">#ffd2d2d2</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_off_white">#FDFDFB</color>
+    <color name="nav_bar_grey">#F1F1F1</color>
+    <color name="and_nav_bar_grey">#999999</color>
+    <color name="energy_blue">#a5e5ff</color>
+    <color name="energy_blue_lighter">#D0F0FD</color>
+    <color name="energy_blue_border">#187DA5</color>
+    <color name="energy_blue_darker">#2084AC</color>
+    <color name="res_socket">#8ea6ee</color>
+    <color name="res_socket_border">#244686</color>
+    <color name="luck_socket">#a9e4f6</color>
+    <color name="luck_socket_border">#519ec8</color>
+    <color name="eff_socket">#fede65</color>
+    <color name="eff_socket_border">#e6c247</color>
+    <color name="comf_socket">#f79091</color>
+    <color name="comf_socket_border">#e44549</color>
+    <color name="progress_gmt">#ffcb6d</color>
+    <color name="progress_gst">#d6d6d6</color>
+</resources>

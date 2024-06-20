@@ -1,0 +1,39 @@
+*.iml
+.gradle
+/local.properties
+.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/src/main/AndroidManifest.xml
+# Built application files
+app/release
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Gradle files
+.gradle/
+build/
+
+# Log Files
+*.log
+
+# unrelated asset folders & keys
+keys/
+app store pics/
+
+# gradle file
+app/build.gradle
+
+website
+*.csv
+*.xlsx
+*.html
